@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!-- bootstrap css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- heading  -->
+    <header>
+        <h1 class="text-success text-center">Search Your Favorite Book</h1>
+    </header>
+
+    <main>
+        <section>
+            <!-- Search Input  -->
+            <div class="input-group mb-5 mt-3 w-50 mx-auto">
+                <input id="search-field" type="text" class="form-control" placeholder="Search a book which you want"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="searchBook()" class="btn btn-outline-secondary" type="button"
+                    id="search-button">Search</button>
+            </div>
+        </section>
+
+        <section>
+            <!-- total result  -->
+            <h3 class="text-danger text-center mb-5" id="total-result">
+            </h3>
+
+            <!-- Spinners  -->
+            <strong id="spinner" class="container w-50 ms-5">
+
+            </strong>
+        </section>
+
+        <section>
+            <!-- display book  -->
+            <div id="book-card" class="row row-cols-1 row-cols-md-3 g-4 container w-100 mx-auto">
+
+            </div>
+        </section>
+    </main>
+
+    <!-- bootstrap js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <script src="book.js"></script>
+</body>
+
+</html>
